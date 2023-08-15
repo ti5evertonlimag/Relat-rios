@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios BI</title>
+    <link rel="icon" href="G.ico" type="image/x-icon">
+    <style>
+        ul.menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        ul.menu li {
+            float: left;
+        }
+
+        ul.menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.menu li a:hover {
+            background-color: #555;
+        }
+
+        .iframe-container {
+            clear: both;
+        }
+
+        iframe {
+            display: none;
+            width: 1280px;
+            height: 720px;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+    <script>
+        function mostrarIframe(iframeId) {
+            var iframes = document.querySelectorAll('.iframe-container iframe');
+            for (var i = 0; i < iframes.length; i++) {
+                iframes[i].style.display = 'none';
+            }
+            
+            var iframeToShow = document.getElementById(iframeId);
+            if (iframeToShow) {
+                iframeToShow.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#" onclick="mostrarIframe('iframe1')">Painel de Vendas</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe2')">Desenv. Vendas</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe3')">Acessos Site</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe4')">Entregas</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe5')">Patrimônio</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe6')">Investimentos</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe7')">Cotações/Pedidos</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe8')">Tom Ticket</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe9')">Comissões</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe10')">Tempo de Resposta</a></li>
+        <li><a href="#" onclick="mostrarIframe('iframe11')">Faturamento</a></li>
+    </ul>
+    
+    <div class="iframe-container">
+        <iframe id="iframe1" title="painel de vendas" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=0ab9bf6e-6f8b-4df1-997c-322c84cf17e9&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe2" title="Analise de desempenho" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=9ae3481a-7408-4789-baea-5965f7f8f87d&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe3" title="Acessos Site" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=552a8a6b-3ac2-48a0-8144-7e2ba274e4c2&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe4" title="Controle de Entregas" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=48bee4b9-8156-4f03-938b-3ea5ba59f373&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe5" title="Inventário de Patrimônio" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=e888c8ce-16f3-486c-9ab8-488eb1fe22cf&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe6" title="Investimentos" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=1b25b03d-4614-4770-85fc-30a1376cee53&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe7" title="Numero de Cotações" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=8f6aa580-18a6-4cf8-b06a-29b550e60c01&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe8" title="relatorio de chamados do tom ticket" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=1c7425ef-aea2-4652-ad08-095b52da5f1d&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe9" title="Relatório de comissões" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d062ff97-5c12-42d3-911d-28f2ed7509da&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe10" title="Relatório de Cotações" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=d8764367-8f51-4cb9-9b30-d794774e9aac&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe id="iframe11" title="Relatório de Faturamento" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=93de350e-60b6-4fce-bc2a-dec3c48d9eb4&autoAuth=true&ctid=b3a945c2-60da-4192-ae7d-9b42ce492178" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+</body>
+</html>
