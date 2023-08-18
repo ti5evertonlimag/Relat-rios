@@ -5,45 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios BI</title>
     <link rel="icon" href="G.ico" type="image/x-icon">
-    <style>
-        ul.menu {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        ul.menu li {
-            float: left;
-        }
-
-        ul.menu li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul.menu li a:hover {
-            background-color: #555;
-        }
-
-        .iframe-container {
-            clear: both;
-        }
-
-        iframe {
-            display: none;
-            width: 1280px;
-            height: 720px;
-        }
-
-        .visible {
-            display: block;
-        }
-    </style>
+    <link href="./CSS/styles.css" rel="stylesheet">
     <script>
         function mostrarIframe(iframeId) {
             var iframes = document.querySelectorAll('.iframe-container iframe');
@@ -59,8 +21,13 @@
     </script>
 </head>
 <body>
-    <ul class="menu">
-        <li><a href="#" onclick="mostrarIframe('iframe1')">Painel de Vendas</a></li>
+    <ul class="menu">    
+       
+        <li><img class="logoLimag" src="./IMG/logoLimagBranca.png"></li>
+        <li><a href="#" onclick="mostrarIframe('iframe1')">Painel de Vendas</a>
+        <li class="dropdown-menu">
+        </li>
+        </li>
         <li><a href="#" onclick="mostrarIframe('iframe2')">Desenv. Vendas</a></li>
         <li><a href="#" onclick="mostrarIframe('iframe3')">Acessos Site</a></li>
         <li><a href="#" onclick="mostrarIframe('iframe4')">Entregas</a></li>
@@ -71,6 +38,7 @@
         <li><a href="#" onclick="mostrarIframe('iframe9')">Comissões</a></li>
         <li><a href="#" onclick="mostrarIframe('iframe10')">Tempo de Resposta</a></li>
         <li><a href="#" onclick="mostrarIframe('iframe11')">Faturamento</a></li>
+        
     </ul>
     
     <div class="iframe-container">
